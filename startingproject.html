@@ -4,62 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio website</title>
+    <title>My Portfolio</title>
 </head>
 
-<body style="background-color: powderblue;">
+<body style="background-color: #8bc3cc">
 
-    <!-- Add your image here -->
-    <img src="your-image.jpg" alt="Shristi Shrestha" width="200" height="200">
+    <!-- Navbar -->
+    <nav style="background-color: #354849; padding: 5px; position: fixed; top: 0; width: 100%;">
+        <p>
+            <a href="#about" style="color: rgb(239, 237, 237);">About</a>&nbsp;&nbsp;
+            <a href="#skills" style="color: rgb(252, 249, 249);">Skills</a>&nbsp;&nbsp;
+            <a href="#work" style="color: rgb(234, 231, 231);">Work</a>&nbsp;&nbsp;
+            <a href="#contact" style="color: rgb(246, 244, 244);">Contact</a>
+        </p>
+    </nav>
 
-    <h1>Hello I am Shristi Shrestha
-        I am generally a Student of CSIT. Please hire me!!!.<br>
-    </h1>
+    <br><br>
 
-    <h2>About me </h2>
-    <p>Hi, I’m Shristi Shrestha! I’m a web developer who loves creating clean, user-friendly, and efficient digital
-        solutions. I work primarily with PHP, MySQL, and front-end frameworks, and I enjoy turning ideas into functional
-        web applications. I’ve gained hands-on experience building e-commerce systems and admin dashboards, and I thrive
-        on solving problems through code while constantly learning new technologies.
-        Beyond coding, I’m passionate about UI design, exploring new tools, and mentoring peers. I’m always excited
-        about collaborating on meaningful projects and open to new opportunities—so don’t hesitate to reach out!
-    </p>
 
-    <section id="skills">
+
+
+
+    <!-- About Section -->
+    <div id="about">
+        <br>
+        <h2>About Me</h2>
+
+        <h1>Hello, I am Shristi Shrestha</h1>
+        <p>CSIT Student & Web Developer. I love creating simple and clean websites.</p>
+        <img src=" unnamed.jpg" alt="Shristi Shrestha" width="150" height="150" style="border-radius: 50%;">
+        <p>I am a web developer learning HTML, CSS, JavaScript, and Python. I enjoy building websites and solving
+            problems with code.</p>
+    </div>
+    <br>
+    <!-- Skills Section -->
+    <div id="skills">
         <h2>Skills</h2>
         <ul>
             <li>HTML & CSS</li>
             <li>JavaScript</li>
             <li>Python</li>
-            <li>Node.js</li>
             <li>SQL & MySQL</li>
-            <li>Machine Learning</li>
-
         </ul>
-    </section>
-    <section id="work">
-        <h2>My Recent Work</h2>
+    </div>
+    <br>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Skill</th>
+            <th>Experience</th>
+        </tr>
+        <tr>
+            <td>HTML & CSS</td>
+            <td>3 Years</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>2 Years</td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    <!-- Work Section -->
+    <div id="work">
+        <h2>My Work</h2>
         <ul>
             <li>Food Ordering System (PHP + MySQL)</li>
-            <li> E-commerce Website – Ecooner (Frontend + Backend)</li>
-            <li?>Smart India Hackathon – Ambulance Service Platform (Flask)</li>
-                <li> Healthcare ML System – Disease prediction + Diet plan</li>
+            <li>E-commerce Website – Ecooner</li>
+            <li>Face Detection System (Image Processing)</li>
+            <li>Hospital Mangement</li>
         </ul>
-    </section>
+    </div>
+    <br>
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <form action=" mailto:shristi@example.com" method="post" enctype="text/plain">
+            <label>Name:</label><br>
+            <input type="text" name="name" placeholder="Your Name" required><br><br>
 
-    <form action="#" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Your Email" required><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+            <label>Message:</label><br>
+            <textarea name="message" placeholder="Your Message" required></textarea><br><br>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" placeholder="Write your message here"
-            required></textarea><br><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
 
-        <input type="submit" value="Send Message">
-    </form>
+
 
 </body>
 
