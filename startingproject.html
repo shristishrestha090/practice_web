@@ -1,93 +1,214 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Shristi Shrestha Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body style="background-color: #8bc3cc">
-
+<body>
     <!-- Navbar -->
-    <nav style="background-color: #354849; padding: 5px; position: fixed; top: 0; width: 100%;">
-        <p>
-            <a href="#about" style="color: rgb(239, 237, 237);">About</a>&nbsp;&nbsp;
-            <a href="#skills" style="color: rgb(252, 249, 249);">Skills</a>&nbsp;&nbsp;
-            <a href="#work" style="color: rgb(234, 231, 231);">Work</a>&nbsp;&nbsp;
-            <a href="#contact" style="color: rgb(246, 244, 244);">Contact</a>
-        </p>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <br><br>
-
-    <!-- About Section -->
-    <div id="about">
-        <br>
-        <h2>About Me</h2>
-
-        <h1>Hello, I am Shristi Shrestha</h1>
-        <p>CSIT Student & Web Developer. I love creating simple and clean websites.</p>
-        <img src=" unnamed.jpg" alt="Shristi Shrestha" width="150" height="150" style="border-radius: 50%;">
-        <p>I am a web developer learning HTML, CSS, JavaScript, and Python. I enjoy building websites and solving
-            problems with code.</p>
-    </div>
-    <br>
-    <!-- Skills Section -->
-    <div id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>SQL & MySQL</li>
-        </ul>
-    </div>
-    <br>
-    <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-            <th>Skill</th>
-            <th>Experience</th>
-        </tr>
-        <tr>
-            <td>HTML & CSS</td>
-            <td>3 Years</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>2 Years</td>
-        </tr>
-    </table>
-    </div>
-    <br>
-    <!-- Work Section -->
-    <div id="work">
-        <h2>My Work</h2>
-        <ul>
-            <li>Food Ordering System (PHP + MySQL)</li>
-            <li>E-commerce Website – Ecooner</li>
-            <li>Face Detection System (Image Processing)</li>
-            <li>Hospital Mangement</li>
-        </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h3>Hello I am,</h3>
+            <h1>Shristi Shrestha</h1>
+            <p>CSIT Student & Web Developer. I love creating simple and clean websites.</p>
+            <button onclick="alert('Downloading CV...')">Download CV</button>
+        </div>
+        <div class="hero-image">
+            <img src="unnamed.jpg" alt="Shristi Shrestha">
+        </div>
     </section>
 
-    <form action="#" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+    <!-- About Section -->
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-card">
+            <div class="about-image">
+                <img src="your-photo.jpg" alt="Shristi Shrestha">
+            </div>
+            <div class="about-content">
+                <h2>Shristi Shrestha</h2>
+                <h4>🚀 Full Stack Frontend Developer</h4>
+                <p>
+                    I am a passionate web developer learning <b>HTML</b>, <b>CSS</b>,
+                    <b>JavaScript</b>, and <b>Python</b>. I enjoy building beautiful
+                    websites and solving real-world problems with code.
+                </p>
+                <div class="skills-icons">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-python"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <label>Email:</label><br>
-            <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <!-- Projects + Skills Wrapper -->
+    <div class="main-sections">
+        <!-- Projects -->
+        <section id="work" class="work-section">
+            <h2>My Projects</h2>
+            <div class="work-cards">
+                <div class="work-card">🍔 Food Ordering System (PHP + MySQL)</div>
+                <div class="work-card">🛒 E-commerce Website – Ecooner</div>
+                <div class="work-card">👤 Face Detection System (Image Processing)</div>
+                <div class="work-card">🏥 Hospital Management System</div>
+            </div>
+        </section>
 
-            <label>Message:</label><br>
-            <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+        <!-- Skills -->
+        <!-- Skills -->
+        <section id="skills" class="skills-section">
+            <div class="skills-header">
+                <h2>My Skills</h2>
+                <span>— what I know —</span>
+            </div>
 
-            <input type="submit" value="Send Message">
-        </form>
-    </div>
+            <div class="skills-container">
+                <!-- Left Side -->
+                <div class="skills-left">
+                    <h3>My creative skills & experiences.</h3>
+                    <p>
+                        Proper Knowledge of HTML, CSS, JS. Basic of C, C#, PHP along
+                        with in hand experience of the website designing.
+                    </p>
+                    <a href="#" class="read-btn">Read more</a>
+                </div>
+
+                <!-- Right Side -->
+                <div class="skills-right">
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>JavaScript</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 30%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>PHP</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 35%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-title">
+                            <span>C#</span>
+                            <span>24%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 24%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- Service Section -->
+        <section id="service" class="service-section">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>UI/UX design enhances user experience and creates intuitive interfaces.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive websites using HTML, CSS, JavaScript, and backend technologies.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Creative Designer</h3>
+                    <p>Bringing ideas to life with branding, graphics, and visual storytelling.</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Me <span>— Get in Touch —</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>If you have any work for me, please feel free to contact.</p>
+                    <div class="info-item"><i class="fas fa-user"></i> <span><b>Name:</b> Shristi Shrestha</span></div>
+                    <div class="info-item"><i class="fas fa-map-marker-alt"></i> <span><b>Address:</b> Kathmandu,
+                            Nepal</span></div>
+                    <div class="info-item"><i class="fas fa-envelope"></i> <span><b>Email:</b>
+                            shristi@example.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="row">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea rows="5" placeholder="Message.." required></textarea>
+                        <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            Created By Shristi Shrestha | © 2025 All rights reserved.
+        </footer>
 </body>
 
 </html>
